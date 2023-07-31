@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+   background-image: url('picture2.jpg');
+   background-size: cover; 
+   padding: 10px;
+  }
+  .To-Dolist{
+    width: 80%;
+    max-width: 500px;
+    background-color:transparent;
+   margin-top: 150px;
+   margin-left: 59%;
+   padding: 40px  30px  70px;
+    border-radius: 10px;
+
+    color: white;
+  }
+  .To-Dolist h2{
+  
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background-color: rgb(211, 208, 208);
+  }
+  input{
+    font-size:12px ;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #ff5945;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  button:hover{
+    transform: translateY(8px);
+  }
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px  8px  12px  50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  } 
+  ul li::before{
+    content: "";
+     position: absolute;
+      height:  28px;
+      width: 28px;
+      border-radius: 50%;
+    background-image: url('unchecked.jfif');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  ul li.checked{
+    color: #dbd8d8;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url('checked.png') ;
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+  border-radius: 50%;
+  }
+  ul li span:hover{
+    background: #edeef0;
+  }
+  
